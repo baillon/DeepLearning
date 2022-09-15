@@ -1,0 +1,103 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<title>Description of selectFolders</title>
+<meta name="keywords" content="selectFolders">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="generator" content="m2docgen &copy 2021: Nils Boehnisch">
+<meta name="robots" content="index, follow">
+<link type="text/css" rel="stylesheet" href="ressources/m2html.css">
+</head>
+<body>
+<a name="_top"></a>
+
+<div><a class = "image" href="IMDS.html"><img border="0" src="ressources/Logo_IMDS.png"></a></div>
+<h1>selectFolders </h1> <hr class="btw">
+<!-- START SHORT_DESC / important comment -->
+<div><pre class="firstDesc"> Select Folders to create an Image Datastore
+</pre></div>
+<!-- END SHORT_DESC / important comment -->
+<!-- START Description: / important comment -->
+<h2><a name="_description"></a>Description: <a href="#_top"></a></h2><hr  class="btw">
+<div class="fragment"><pre class="text"> This function is part of IMDS and creates an imageDatastore, specifying the
+  folders to be used to select images.
+</pres></div>
+<!-- END Description: / important comment -->
+<!-- START Syntax: / important comment -->
+<h2><a name="_description"></a>Syntax: <a href="#_top"></a></h2><hr  class="btw">
+<div class="fragment"><pre class="text">    imds = selectFolders(rootFolder, arraySelectedFolders);
+       selects the subdirectories of rootFolder whose names include
+       the strings specified in arraySelectedFolders.
+
+    imds = selectFolders(rootFolder, arraySelectedFolders, false);
+       IDEM
+
+    imds = selectFolders(rootFolder, arraySelectedFolders, true);
+       selects the subdirectories to EXCLUDE from rootFolder whose 
+       name contains the strings specified in arraySelectedFolders.
+
+    imds = selectFolders(rootFolder, arraySelectedFolders, flagExclusion, labelsNames);
+       depending on the value of flagExclusion, the subdirectories will be
+       included (false) or excluded (true) to create the imageDatastore. 
+       labelsNames will be used to rename the classes of the imageDatastore.
+       - If labelsNames is a single string of characters, all selected images
+           in the Datastore will be labelled with this single label.
+       - If labelsNames is an array of labels, the classes consisting of the
+           various directories will be renamed (in order).
+</pres></div>
+<!-- END Syntax: / important comment -->
+<!-- START Input:  / important comment -->
+<h2><a name="_description"></a>Input:  <a href="#_top"></a></h2><hr  class="btw">
+<div class="fragment"><pre class="text">    rootFolder [string]: path of the Root Directory where to find the images 
+    arraySelectedFolders [array]: array containing the names of the 
+               subdirectories to selected. The directories contained in 
+               the rootFolder will be selected if their name contains 
+               one of the proposed strings in arraySelectedFolders.
+    flagExclusion [boolean]: boolean to active the exclusion option
+               - false by default == the selected list corresponds to
+                                       an inclusion of Folders
+               - true == the selected list is a Folders exclusion
+    labelsNames [string array]: single label or array of labels to rename
+               the classes of the imageDatastore
+</pres></div>
+<!-- END Input:  / important comment -->
+<!-- START Output: / important comment -->
+<h2><a name="_description"></a>Output: <a href="#_top"></a></h2><hr  class="btw">
+<div class="fragment"><pre class="text">   imds [imageDatastore]:  output imageDatastore
+</pres></div>
+<!-- END Output: / important comment -->
+<!-- START Disclaimer: / important comment -->
+<h2><a name="_description"></a>Disclaimer: <a href="#_top"></a></h2><hr  class="btw">
+<div class="fragment"><pre class="text">   Last editor : Fabien Baillon
+   Last edit on: 10.01.2022
+
+   Copyright (c) 2021-2022 Fabien Baillon.
+
+   This file is part of IMDS.
+
+   IMDS is free software: you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation, either version 3 of the License, or
+   any later version. Also see the file "License.mlx".
+</pres></div>
+<!-- END Disclaimer: / important comment -->
+<!-- START TOTAL_CALL / important comment-->
+<h2><a name="_cross"></a>Function References<a href="#_top"></a></h2><hr class="btw">
+<!-- START NAME_CALL -->
+<pre class = "text">This function calls:</pre><ul>
+
+<li><a href="IMDS.html" class="code" title="Go To Function">IMDS</a></li>
+<!-- functRef above / important comment -->
+</ul>
+<!-- END NAME_CALL -->
+<!--{TOTAL_CALL} -->
+<!-- END TOTAL_CALL / important comment-->
+<!-- CONTENT_FROM_M2DOC -->
+<!-- the comment above and this one will be replaced by the actual content -->
+
+<hr class="last">
+<address>Generated on 15-Sep-2022 by <strong><a class = "image" href="IMDS.html" title="Matlab Documentation">m2docgen</a></strong> &copy; 2022 </address>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- $Date: 2022-09-15 17:45:25 $ -->
+<toc version='2.0'>
+   <tocitem target="IMDS.html">IMDS
+   <tocitem target="IMDS.html" >Start with IMDS
+       <tocitem target="Example_codes.html">Example_codes</tocitem>
+       <tocitem target="License.html">License</tocitem>
+    </tocitem>
+   <tocitem target="IMDS.html" >Getting started
+       <tocitem target="example_Balanced_Food_imageDatastore.html">example_Balanced_Food_imageDatastore</tocitem>
+    </tocitem>
+   <tocitem target="IMDS.html" >create Image Datastore
+       <tocitem target="concatenateImageDatastores.html">concatenateImageDatastores</tocitem>
+       <tocitem target="excludeFolders.html">excludeFolders</tocitem>
+       <tocitem target="includeFolders.html">includeFolders</tocitem>
+       <tocitem target="selectFolders.html">selectFolders</tocitem>
+    </tocitem>
+   <tocitem target="IMDS.html" >manage Image Datastore
+       <tocitem target="changePath.html">changePath</tocitem>
+       <tocitem target="fuseClasses.html">fuseClasses</tocitem>
+       <tocitem target="previewClasses.html">previewClasses</tocitem>
+       <tocitem target="renameLabels.html">renameLabels</tocitem>
+    </tocitem>
+   <tocitem target="IMDS.html" >Balance Image Datastore
+       <tocitem target="balanceImageDatastore.html">balanceImageDatastore</tocitem>
+    </tocitem>
+    </tocitem>
+</toc>

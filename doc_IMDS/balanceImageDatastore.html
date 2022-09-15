@@ -1,0 +1,76 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<title>Description of balanceImageDatastore</title>
+<meta name="keywords" content="balanceImageDatastore">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="generator" content="m2docgen &copy 2021: Nils Boehnisch">
+<meta name="robots" content="index, follow">
+<link type="text/css" rel="stylesheet" href="ressources/m2html.css">
+</head>
+<body>
+<a name="_top"></a>
+
+<div><a class = "image" href="IMDS.html"><img border="0" src="ressources/Logo_IMDS.png"></a></div>
+<h1>balanceImageDatastore </h1> <hr class="btw">
+<!-- START SHORT_DESC / important comment -->
+<div><pre class="firstDesc"> Balance Image Datastore
+</pre></div>
+<!-- END SHORT_DESC / important comment -->
+<!-- START Description: / important comment -->
+<h2><a name="_description"></a>Description: <a href="#_top"></a></h2><hr  class="btw">
+<div class="fragment"><pre class="text"> This function is part of IMDS and balances the classes of an imageDatastore,
+ replicating if necessary the images already present in each class to
+  to reach the desired number of images.
+</pres></div>
+<!-- END Description: / important comment -->
+<!-- START Syntax: / important comment -->
+<h2><a name="_description"></a>Syntax: <a href="#_top"></a></h2><hr  class="btw">
+<div class="fragment"><pre class="text">    imds_B = balanceImageDatastore(imds);
+        balances the classes of the imageDatastore, so that each class
+        has the maximum number of images observed in the original imageDatastore
+ 
+    imds_B = balanceImageDatastore(imds, valNum);
+        balances the classes of the imageDatastore, so that each class
+        has the number of images valNum
+ 
+    balanceImageDatastore(imds, valNum);
+        if there is no imageDatastore specified for the output, the
+        the first input will be modified.
+</pres></div>
+<!-- END Syntax: / important comment -->
+<!-- START Input:  / important comment -->
+<h2><a name="_description"></a>Input:  <a href="#_top"></a></h2><hr  class="btw">
+<div class="fragment"><pre class="text">    imds [imageDatastore]: imageDatastore
+    valNum [integer] (optional): number of images desired per class 
+</pres></div>
+<!-- END Input:  / important comment -->
+<!-- START Output: / important comment -->
+<h2><a name="_description"></a>Output: <a href="#_top"></a></h2><hr  class="btw">
+<div class="fragment"><pre class="text">   imds_B [imageDatastore]:  Balanced imageDatastore
+</pres></div>
+<!-- END Output: / important comment -->
+<!-- START Disclaimer: / important comment -->
+<h2><a name="_description"></a>Disclaimer: <a href="#_top"></a></h2><hr  class="btw">
+<div class="fragment"><pre class="text">   Last editor : Fabien Baillon
+   Last edit on: 12.12.2021
+
+   Copyright (c) 2021-2022 Fabien Baillon.
+
+   This file is part of IMDS.
+
+   IMDS is free software: you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation, either version 3 of the License, or
+   any later version. Also see the file "License.mlx".
+</pres></div>
+<!-- END Disclaimer: / important comment -->
+<!-- CONTENT_FROM_M2DOC -->
+<!-- the comment above and this one will be replaced by the actual content -->
+
+<hr class="last">
+<address>Generated on 15-Sep-2022 by <strong><a class = "image" href="IMDS.html" title="Matlab Documentation">m2docgen</a></strong> &copy; 2022 </address>
+</body>
+</html>

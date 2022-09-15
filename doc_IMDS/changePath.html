@@ -1,0 +1,73 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<title>Description of changePath</title>
+<meta name="keywords" content="changePath">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="generator" content="m2docgen &copy 2021: Nils Boehnisch">
+<meta name="robots" content="index, follow">
+<link type="text/css" rel="stylesheet" href="ressources/m2html.css">
+</head>
+<body>
+<a name="_top"></a>
+
+<div><a class = "image" href="IMDS.html"><img border="0" src="ressources/Logo_IMDS.png"></a></div>
+<h1>changePath </h1> <hr class="btw">
+<!-- START SHORT_DESC / important comment -->
+<div><pre class="firstDesc"> Change path in  an Image Datastore
+</pre></div>
+<!-- END SHORT_DESC / important comment -->
+<!-- START Description: / important comment -->
+<h2><a name="_description"></a>Description: <a href="#_top"></a></h2><hr  class="btw">
+<div class="fragment"><pre class="text"> This function is part of IMDS and allows you to change the paths to the files
+ in an imageDatastore, by specifying a new string that should
+ replace the old one.
+</pres></div>
+<!-- END Description: / important comment -->
+<!-- START Syntax: / important comment -->
+<h2><a name="_description"></a>Syntax: <a href="#_top"></a></h2><hr  class="btw">
+<div class="fragment"><pre class="text">   imds_S = changePath(imds, old_rootFolder, new_rootFolder);
+       the paths to the files in the datastore will be changed by
+       replacing the old string old_rootFolder with the new new_rootFolder.
+
+   changePath(imds, old_rootFolder, new_rootFolder);
+       if there is no imageDatastore specified for the output,
+       the input one will be changed.
+</pres></div>
+<!-- END Syntax: / important comment -->
+<!-- START Input:  / important comment -->
+<h2><a name="_description"></a>Input:  <a href="#_top"></a></h2><hr  class="btw">
+<div class="fragment"><pre class="text">    imds [imageDatastore]: imageDatastore
+    old_rootFolder [string]: string of the path to the datastore files 
+    new_rootFolder [string]: string for the target path 
+</pres></div>
+<!-- END Input:  / important comment -->
+<!-- START Output: / important comment -->
+<h2><a name="_description"></a>Output: <a href="#_top"></a></h2><hr  class="btw">
+<div class="fragment"><pre class="text">   imds_S [imageDatastore]:  output imageDatastore
+</pres></div>
+<!-- END Output: / important comment -->
+<!-- START Disclaimer: / important comment -->
+<h2><a name="_description"></a>Disclaimer: <a href="#_top"></a></h2><hr  class="btw">
+<div class="fragment"><pre class="text">   Last editor : Fabien Baillon
+   Last edit on: 10.01.2022
+
+   Copyright (c) 2021-2022 Fabien Baillon.
+
+   This file is part of IMDS.
+
+   IMDS is free software: you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation, either version 3 of the License, or
+   any later version. Also see the file "License.mlx".
+</pres></div>
+<!-- END Disclaimer: / important comment -->
+<!-- CONTENT_FROM_M2DOC -->
+<!-- the comment above and this one will be replaced by the actual content -->
+
+<hr class="last">
+<address>Generated on 15-Sep-2022 by <strong><a class = "image" href="IMDS.html" title="Matlab Documentation">m2docgen</a></strong> &copy; 2022 </address>
+</body>
+</html>

@@ -1,0 +1,90 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<title>Description of fuseClasses</title>
+<meta name="keywords" content="fuseClasses">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="generator" content="m2docgen &copy 2021: Nils Boehnisch">
+<meta name="robots" content="index, follow">
+<link type="text/css" rel="stylesheet" href="ressources/m2html.css">
+</head>
+<body>
+<a name="_top"></a>
+
+<div><a class = "image" href="IMDS.html"><img border="0" src="ressources/Logo_IMDS.png"></a></div>
+<h1>fuseClasses </h1> <hr class="btw">
+<!-- START SHORT_DESC / important comment -->
+<div><pre class="firstDesc"> Fuse all classes of an Image Datastore
+</pre></div>
+<!-- END SHORT_DESC / important comment -->
+<!-- START Description: / important comment -->
+<h2><a name="_description"></a>Description: <a href="#_top"></a></h2><hr  class="btw">
+<div class="fragment"><pre class="text"> This function is part of IMDS and merges all classes in an imageDatastore,
+ naming the resulting class according to the specified labelName.
+ - If a desired number of images in the resulting class is specified
+    the classes are rebalanced accordingly before merging.
+</pres></div>
+<!-- END Description: / important comment -->
+<!-- START Syntax: / important comment -->
+<h2><a name="_description"></a>Syntax: <a href="#_top"></a></h2><hr  class="btw">
+<div class="fragment"><pre class="text">    imds_F = fuseClasses(imds, labelName);
+       merges the classes in the imageDatastore, and names the
+       resulting class labelName.
+
+    imds_F = fuseClasses(imds, labelName, numImages);
+       merges the imageDatastore classes, so that the resulting
+       class labelName has the number of images numImages (the
+       different original classes are represented fairly).
+
+    fuseClasses(imds, labelName, numImages);
+       if there is no imageDatastore specified for the output, the
+       the input one will be modified.
+</pres></div>
+<!-- END Syntax: / important comment -->
+<!-- START Input: / important comment -->
+<h2><a name="_description"></a>Input: <a href="#_top"></a></h2><hr  class="btw">
+<div class="fragment"><pre class="text">    imds [imageDatastore]: input  imageDatastore
+    labelName [string]: label of the resulting class
+    numImages [integer]: desired number of images per class
+</pres></div>
+<!-- END Input: / important comment -->
+<!-- START Output: / important comment -->
+<h2><a name="_description"></a>Output: <a href="#_top"></a></h2><hr  class="btw">
+<div class="fragment"><pre class="text">   imds_F [imageDatastore]:  output imageDatastore
+</pres></div>
+<!-- END Output: / important comment -->
+<!-- START Disclaimer: / important comment -->
+<h2><a name="_description"></a>Disclaimer: <a href="#_top"></a></h2><hr  class="btw">
+<div class="fragment"><pre class="text">   Last editor : Fabien Baillon
+   Last edit on: 12.12.2021
+
+   Copyright (c) 2021-2022 Fabien Baillon.
+
+   This file is part of IMDS.
+
+   IMDS is free software: you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation, either version 3 of the License, or
+   any later version. Also see the file "License.mlx".
+</pres></div>
+<!-- END Disclaimer: / important comment -->
+<!-- START TOTAL_CALL / important comment-->
+<h2><a name="_cross"></a>Function References<a href="#_top"></a></h2><hr class="btw">
+<!-- START NAME_CALL -->
+<pre class = "text">This function calls:</pre><ul>
+
+<li><a href="IMDS.html" class="code" title="Go To Function">IMDS</a></li>
+<!-- functRef above / important comment -->
+</ul>
+<!-- END NAME_CALL -->
+<!--{TOTAL_CALL} -->
+<!-- END TOTAL_CALL / important comment-->
+<!-- CONTENT_FROM_M2DOC -->
+<!-- the comment above and this one will be replaced by the actual content -->
+
+<hr class="last">
+<address>Generated on 15-Sep-2022 by <strong><a class = "image" href="IMDS.html" title="Matlab Documentation">m2docgen</a></strong> &copy; 2022 </address>
+</body>
+</html>
