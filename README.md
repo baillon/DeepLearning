@@ -22,3 +22,13 @@ The Structure of this project is as follows:
 The License can be found in the main folder. 
 
 You can find IMDS on Matlab File Exchange:  [![View IMDS on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)]()
+
+---
+
+This package containts functions to:
++ include or exclude Folders to create an image datastore
++ concatanate image datastores
++ fuse classes of an image datastore
++ preview images in classes
++ rename classes labels
++ balance number of image in all classes of an image datastore
