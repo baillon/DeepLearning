@@ -1,7 +1,24 @@
 # DeepLearning
 
-A Matlab datastore class for balanced image data.
+## Package IMDS
+![Logo_IMDS](https://user-images.githubusercontent.com/1791865/190570256-36f4025e-117c-43e7-8700-9671994265d5.svg)
 
-https://github.com/baillon/DeepLearning
+[![View IMDS on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)]()
 
-Use a BalancedImageDatastore object to manage a balanced collection of image files. The balanced datastore of image files is created by duplicating the lowest occurrence images from the original image datastore. The new datastore will be composed by nClasses * maxOccur observations, where nClasses is the number of distinct labels of the original image datastore and maxOccur is the count of the most sampled label.
+Welcome to **IMDS**:
+
+This is only a short "README":
+
+**Matlab package** to facilitate working with **Image Datastore**.
+
+The Structure of this project is as follows:
+
+- The folder "+IMDS" contains all matlab source files associated witht the project.
+
+- The folder "Matlab_AddOn" contains the Matlab Toolbox installer of the IMDS Matlab package.
+- Help files can be found in "doc_IMDS".
+
+
+The License can be found in the main folder. 
+
+You can find IMDS on Matlab File Exchange:  [![View IMDS on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)]()
